@@ -24,7 +24,9 @@ You can click [here](https://github.com/PUGEA/DAE-TPGM) to download the DAE-TPGM
 Here, we take Paul et al. blood differentiation data as an example to show the specific process of dimensionality reduction using DAE-TPGM.
 
 1. Load data
+
 import scanpy.api as sc
+
 paul15_adata = sc.datasets.paul15()
 
 2. Data preprocessing: convert the original count data into semi continuous form
