@@ -19,7 +19,7 @@ You can click [here](https://github.com/PUGEA/DAE-TPGM) to download the DAE-TPGM
 
 
 
-### Example 1-dimensionality reduction
+### Example 1-Dimensionality Reduction
 
 Here, we take Paul et al. blood differentiation data as an example to show the specific process of dimensionality reduction using DAE-TPGM.
 
@@ -55,7 +55,7 @@ sc.tl.dpt(adata_tpm, n_branchings=1)
 Figure 1. Scatter plots of diffusion map based on PCA (first row) and DAE-TPGM (second row) colored according to the cell type assignment from [Paul et al.](https://www.cell.com/cell/fulltext/S0092-8674(15)01493-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867415014932%3Fshowall%3Dtrue), diffusion pseudotime (DPT) and DPT branches.
 
 
-### Example 2-imputation
+### Example 2-Imputation
 Here, we take Klein dataset as an example to show the specific process of imputation using DAE-TPGM. The download address of the Klein dataset is [here](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/klein.rds).
 
 Step 1. Feature selection. Select the top 3000 high variable genes by using the Seurat package
