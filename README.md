@@ -82,7 +82,10 @@ Step 4. Display of visualization and clustering performance.
 ![Image text](https://github.com/PUGEA/DAE-TPGM/blob/main/demo_images/klein_tsne_2.png)
 Figure 2.The tSNE visualizations of the Klein dataset. The fighures illustrates the results obtained from the Klein dataset, with the dropout outputs imputed by DAE-TPGM, respectively.
 
-![Image text](https://github.com/PUGEA/DAE-TPGM/blob/main/demo_images/klein_evaluation.png)
+
+
+<img src="https://github.com/PUGEA/DAE-TPGM/blob/main/demo_images/klein_evaluation.png" width="200" height="200" alt="微信小程序"/><br/>
+
 Figure 3. Clustering evaluation metrics including ACC, ARI, NMI, and F1 for the original data and imputed data of Klein dataset.
 
 ## Authors
