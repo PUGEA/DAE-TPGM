@@ -23,23 +23,23 @@ You can click [here](https://github.com/PUGEA/DAE-TPGM) to download the DAE-TPGM
 
 Here, we take Paul et al. blood differentiation data as an example to show the specific process of dimensionality reduction using DAE-TPGM.
 
-step 1. Load data
+Step 1. Load data
 
 import scanpy.api as sc
 
 paul15_adata = sc.datasets.paul15()
 
-step 2. Data preprocessing: convert the original count data into semi continuous form
+Step 2. Data preprocessing: convert the original count data into semi continuous form
 
 sc.pp.normalize_per_cell(paul15_adata)
 
 sc.pp.log1p(paul15_adata)
 
-step 3. Run DAE-TPGM model
+Step 3. Run DAE-TPGM model
 
 paul15_adata = dae_tpgm(adata_tpm, threads=4, copy=True, log1p=False, return_info=True)
 
-step 4. Visual display. Here, [DPT](https://www.nature.com/articles/nmeth.3971) method is utilized to measure the trajectory information of cell differentiation.
+Step 4. Visual display. Here, [DPT](https://www.nature.com/articles/nmeth.3971) method is utilized to measure the trajectory information of cell differentiation.
 
 4.1 Compute a neighborhood graph of the low-dimensional data from DAE-TPGM 
 
@@ -50,6 +50,8 @@ sc.pp.neighbors(paul15_adata, n_neighbors=20, use_rep='Encoding', method='gauss'
 sc.tl.dpt(adata_tpm, n_branchings=1)
 
 4.3 Scatter plot in Diffusion Map basis.
+
+![Image text](https://github.com/PUGEA/DAE-TPGM/blob/main/demo_images/paul_2.png)
 
 
 ### Outputs
