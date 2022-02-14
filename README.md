@@ -32,12 +32,15 @@ paul15_adata = sc.datasets.paul15()
 2. Data preprocessing: convert the original count data into semi continuous form
 
 sc.pp.normalize_per_cell(paul15_adata)
+
 sc.pp.log1p(paul15_adata)
 
 3. Run DAE-TPGM model
+
 paul15_adata = dae_tpgm(adata_tpm, threads=4, copy=True, log1p=False, return_info=True)
 
 4. Visual display. Here, [DPT](https://www.nature.com/articles/nmeth.3971) method is utilized to measure the trajectory information of cell differentiation.
+
 4.1 Compute a neighborhood graph of the low-dimensional data from DAE-TPGM 
 sc.pp.neighbors(paul15_adata, n_neighbors=20, use_rep='Encoding', method='gauss')
 
