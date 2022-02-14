@@ -80,6 +80,7 @@ klein_data_df.to_csv('./klein_imputation_data.csv', sep=',', index=True, header=
 Step 4. Display of visualization and clustering performance.
 
 ![Image text](https://github.com/PUGEA/DAE-TPGM/blob/main/demo_images/klein_tsne_2.png)
+Figure 2.The tSNE visualizations of the Klein dataset. The fighures illustrates the results obtained from the Klein dataset, with the dropout outputs imputed by DAE-TPGM, respectively.
 
 ![Image text](https://github.com/PUGEA/DAE-TPGM/blob/main/demo_images/klein_evaluation.png)
 
