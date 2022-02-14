@@ -52,7 +52,7 @@ sc.tl.dpt(adata_tpm, n_branchings=1)
 4.3 Scatter plot in Diffusion Map basis.
 
 ![Image text](https://github.com/PUGEA/DAE-TPGM/blob/main/demo_images/paul_2.png)
-
+Figure 1. Scatter plots of diffusion map based on PCA (first row) and DAE-TPGM (second row) colored according to the cell type assignment from [Paul et al.](https://www.cell.com/cell/fulltext/S0092-8674(15)01493-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867415014932%3Fshowall%3Dtrue), diffusion pseudotime (DPT) and DPT branches.
 
 
 ### Example 2-imputation
@@ -83,6 +83,7 @@ Step 4. Display of visualization and clustering performance.
 Figure 2.The tSNE visualizations of the Klein dataset. The fighures illustrates the results obtained from the Klein dataset, with the dropout outputs imputed by DAE-TPGM, respectively.
 
 ![Image text](https://github.com/PUGEA/DAE-TPGM/blob/main/demo_images/klein_evaluation.png)
+Figure 3. Clustering evaluation metrics including ACC, ARI, NMI, and F1 for the original data and imputed data of Klein dataset.
 
 ## Authors
 
