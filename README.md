@@ -54,14 +54,9 @@ sc.tl.dpt(adata_tpm, n_branchings=1)
 ![Image text](https://github.com/PUGEA/DAE-TPGM/blob/main/demo_images/paul_2.png)
 
 
-### Outputs
 
-Output folder contains the low dimensional representation and imputation of input_file.
-- `encoding.csv` is the low dimensional representation of each cell by encoder. The dimension is determined by the number of neurons in the middle layer of network.
-
-- `imputation.csv` is the imputed output calculated based on the mean of TPGM according to the inferred parameters through decoder. It is formatted as a `cell x gene` matrix.
-
-
+### Example 1-imputation
+Here, we take Klein dataset as an example to show the specific process of imputation using DAE-TPGM. The download address of the Klein dataset is [here](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/klein.rds).
 
 
 
